@@ -1,0 +1,13 @@
+:root {
+  --gradient-background: radial-gradient(circle, #080708, #281d2a);
+}
+
+body {
+  background: var(--gradient-background);
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 96px;
+}
