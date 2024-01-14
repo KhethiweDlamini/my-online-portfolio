@@ -2,7 +2,8 @@
   --gradient-background: radial-gradient(circle, #080708, #8e7293);
   --primary-color: #fff;
   --secondary-color: #111;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --button-color: rgba(129, 45, 129, 0.9);
+  --box-shadow: 0 5px 10px rgba(188, 93, 188, 0.3);
 }
 
 body {
@@ -15,14 +16,13 @@ body {
 }
 
 h1,
-h2 {
+h3 {
   font-weight: bold;
 }
 
 h1 {
   font-size: 96px;
-
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 h3 {
@@ -39,10 +39,16 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1;
+  opacity: 0.7;
 }
 .homepage {
   margin-top: 250px;
   padding-left: 0;
+  margin-left: 250px;
+  margin-right: 250px;
+  background: hsla(273, 10%, 79%, 0.1);
+  box-shadow: var(--box-shadow);
+  border-radius: 30px;
 }
 .navigation-links {
   display: flex;
@@ -52,31 +58,69 @@ video {
 
 .navigation-links a {
   margin: 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
 }
+.bg-black {
+  background: var(--secondary-color);
+}
 
 .start-link {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   box-shadow: var(--box-shadow);
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 54px;
+    font-size: 40px;
   }
-  h2 {
-    font-size: 28px;
+  h3 {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-top: 30px;
+  }
+  .homepage {
+    margin-top: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    background: hsla(273, 10%, 79%, 0.1);
+    box-shadow: var(--box-shadow);
+    border-radius: 30px;
+  }
+  .navigation-links .mb-5 {
+    display: flex;
+    margin: 0;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .navigation-links a {
+    margin: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .start-link {
+    background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
   }
 
-  a {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+  video {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.7;
   }
 }
