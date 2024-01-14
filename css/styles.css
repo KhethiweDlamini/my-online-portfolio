@@ -26,7 +26,7 @@ h1 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
   color: var(--secondary-color);
 }
 video {
@@ -52,7 +52,7 @@ video {
 }
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin-top: 30px;
   justify-content: center;
 }
 
