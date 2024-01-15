@@ -2,8 +2,9 @@
   --gradient-background: radial-gradient(circle, #080708, #8e7293);
   --primary-color: #fff;
   --secondary-color: #111;
+  --emphasis-color: #ffbd39;
   --button-color: rgba(129, 45, 129, 0.9);
-  --box-shadow: 0 5px 10px rgba(188, 93, 188, 0.3);
+  --box-shadow: 0 5px 10px rgba(129, 93, 188, 0.3);
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   font-family: "Orbitron", sans-serif;
   font-weight: 400;
   color: #fff;
-  text-align: center;
 }
 
 h1,
@@ -24,29 +24,33 @@ h1 {
   font-size: 96px;
   color: var(--primary-color);
 }
+h2 {
+  font-size: 24px;
+}
 
 h3 {
-  font-size: 30px;
-  color: var(--secondary-color);
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  color: var(--primary-color);
 }
 video {
   position: absolute;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .homepage {
-  margin-top: 250px;
-  padding-left: 0;
+  margin-top: -10px;
   margin-left: 250px;
-  margin-right: 250px;
+  margin-right: 200px;
+  margin-bottom: 200px;
   background: hsla(273, 10%, 79%, 0.1);
   box-shadow: var(--box-shadow);
   border-radius: 30px;
@@ -56,22 +60,23 @@ video {
   margin-top: 30px;
   justify-content: center;
 }
-
-.navigation-links a {
+.start-link {
   margin: 20px;
   border-radius: 10px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-.bg-black {
-  background: var(--secondary-color);
-}
-
-.start-link {
   background: var(--secondary-color);
   box-shadow: var(--box-shadow);
   color: var(--primary-color);
+}
+
+.bg-black {
+  background: var(--secondary-color);
+}
+.about-me {
+  padding-top: 40px;
+  margin-top: -60px;
 }
 
 /* Media query for small screens */
@@ -98,10 +103,11 @@ video {
     margin-bottom: 10px;
     justify-content: center;
   }
-  .navigation-links a {
+  .navigation-links {
     margin: 10px;
     border-radius: 10px;
     padding: 20px 15px;
+    padding-bottom: -500px;
     text-decoration: none;
     text-transform: capitalize;
   }
@@ -123,6 +129,33 @@ video {
     z-index: -1;
     opacity: 0.7;
   }
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+.education {
+  margin-left: 20px;
+}
+.job-role {
+  color: var(--emphasis-color);
+}
+.resume-wrap .date {
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffbd39;
+}
+
+.resume-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Media query for medium screens */

@@ -59,7 +59,7 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills </a>
+              <a class="nav-link" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Projects </a>
@@ -71,34 +71,62 @@
         </div>
       </div>
     </nav>
-    <section>
-      <div class="homepage">
-        <video autoplay muted loop id="myVideo">
-          <source src="media/background.mp4" type="video/mp4" />
-        </video>
-        <h1 class="text-center">K. Dlamini</h1>
-        <h3 class="text-center">Data Analyst 📈</h3>
-        <div class="navigation-links mb-5">
-          <a href="#" class="start-link" title="Learn more about me"
-            >About Me</a
-          >
-        </div>
+
+    <div class="homepage">
+      <video autoplay muted loop id="myVideo">
+        <source src="media/background-vid.mp4" type="video/mp4" />
+      </video>
+      <h1 class="text-center">K. Dlamini</h1>
+      <h3 class="text-center">📈 Data Analyst 📉</h3>
+      <div class="navigation-links mb-5">
+        <a href="#about-me" class="start-link" title="Learn more about me"
+          >Get Started</a
+        >
       </div>
-    </section>
-    <section>
+    </div>
+
+    <section class="about-me" id="about-me">
+      <h1 class="text-center mb-5 mt-5">About Me</h1>
       <div class="container">
-        <h1>About Me</h1>
-        <p>
-          In today’s digital age, having a solid online presence is essential
-          for professional success. Whether you are a freelancer, entrepreneur,
-          or job seeker, your online profile virtually represents your skills
-          and expertise. One effective way to enhance your online presence is by
-          using skill tags. Skill tags are keywords or phrases that highlight
-          your abilities and make it easier for others to find you in relevant
-          searches. In this blog post, we will explore the importance of skill
-          tags and digital badges (or skills badges) to provide practical tips
-          on using them effectively to boost your online profile.
-        </p>
+        <div class="row">
+          <div class="col md-6 d-none d-lg-block">
+            <img
+              src="/media/images/nerdy-dark-skin.png"
+              class="img-fluid rounded mt-2"
+              alt="ai image of woman coding"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Summary</h2>
+            <p class="description">
+              I'm a <span class="job-role">data analyst</span> based in South
+              Africa, with a passion for developing data-driven solutions to
+              solve issues facing the African continent. <br />
+              <br />
+              I'm also a <span class="job-role">front-end developer</span> and
+              <span class="job-role">statistical modeller</span>, with
+              experience and interest in statistics, machine learning, complex
+              biological systems and extreme value theory.
+            </p>
+            <h2>Education</h2>
+            <div class="col education">
+              <div class="row">
+                <div class="resume-wrap">
+                  <span class="date">2022-2023</span>
+                  <h2>MSc in Modelling for Global Health</h2>
+                  <span class="position">University of Oxford</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="resume-wrap">
+                  <span class="date">2016-2021</span>
+                  <h2>BSc (Hons) in Actuarial Science</h2>
+                  <span class="position">University of the Free State</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
