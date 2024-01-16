@@ -208,6 +208,8 @@ p {
   video {
     display: none;
   }
+  .projects {
+  }
 }
 
 /* Media query for medium screens */
