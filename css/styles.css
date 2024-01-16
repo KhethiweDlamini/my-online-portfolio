@@ -2,10 +2,11 @@
   --gradient-background: radial-gradient(circle, #080708, #8e7293);
   --primary-color: #fff;
   --secondary-color: #111;
-  --emphasis-color: #ffbd39;
+  --emphasis-color: rgb(194, 73, 157);
   --button-color: rgba(129, 45, 129, 0.9);
   --homepage-background: hsla(273, 10%, 79%, 0.1);
   --box-shadow: 0 5px 10px rgba(129, 93, 188, 0.3);
+  --img-hover-background: hsla(273, 58%, 30%, 0.7);
 }
 
 body {
@@ -73,6 +74,10 @@ video {
   color: var(--primary-color);
 }
 
+.start-link:hover {
+  color: var(--emphasis-color);
+}
+
 .bg-black {
   background: var(--secondary-color);
 }
@@ -84,9 +89,7 @@ video {
   padding-top: 40px;
   margin-top: -60px;
 }
-.project-title {
-  color: var(--primary-color);
-}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -95,13 +98,13 @@ p {
 .education {
   margin-left: 20px;
 }
-.job-role {
+.title-emphasis {
   color: var(--emphasis-color);
 }
 .resume-wrap .date {
   font-weight: 900;
   font-size: 20px;
-  color: #ffbd39;
+  color: var(--emphasis-color);
 }
 
 .resume-wrap {
@@ -113,6 +116,39 @@ p {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--img-hover-background);
+}
+.img-container:hover .img-overlay {
+  opacity: 1;
+}
+.overlay-text {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 130px;
 }
 
 /* Media query for small screens */
