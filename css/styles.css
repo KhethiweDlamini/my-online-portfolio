@@ -83,7 +83,7 @@ video {
 }
 .about-me {
   padding-top: 40px;
-  margin-top: -120px;
+  margin-top: -70px;
 }
 .projects {
   padding-top: 40px;
@@ -240,8 +240,6 @@ footer .social-links p {
   }
   video {
     display: none;
-  }
-  .projects {
   }
 }
 
