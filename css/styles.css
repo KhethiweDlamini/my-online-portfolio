@@ -54,8 +54,6 @@ video {
   margin-left: 365px;
   margin-right: 350px;
   margin-bottom: 250px;
-  background: transparent;
-  box-shadow: var(--box-shadow);
   border-radius: 30px;
 }
 .navigation-links {
@@ -207,9 +205,6 @@ footer .social-links p {
     margin-right: 15px;
     margin-bottom: 0;
     padding: 20px;
-    background: hsla(273, 10%, 79%, 0.1);
-    box-shadow: var(--box-shadow);
-    border-radius: 30px;
   }
   .navigation-links {
     display: flex;
