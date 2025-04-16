@@ -10,11 +10,12 @@
 }
 
 body {
-  background: #000000;
+  background-color: #000000;
   margin-top: 100px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif, Arial;
   font-weight: 400;
   color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -49,18 +50,18 @@ video {
   z-index: -1;
   opacity: 0.5;
 }
+
 .homepage {
-  margin-top: 150px;
-  margin-left: 365px;
-  margin-right: 350px;
-  margin-bottom: 250px;
+  margin: 150px 350px 250px 365px;
   border-radius: 30px;
 }
+
 .navigation-links {
   display: flex;
-  margin-top: 30px;
   justify-content: center;
+  margin-top: 30px;
 }
+
 .start-link {
   margin-bottom: 20px;
   border-radius: 10px;
@@ -79,26 +80,28 @@ video {
 .bg-black {
   background: var(--secondary-color);
 }
+
 .about-me {
   padding-top: 40px;
   margin-top: -70px;
 }
+
 .projects {
   padding-top: 40px;
   margin-top: -60px;
 }
 
-.description {
+.description,
+.education {
   font-size: 18px;
   line-height: 1.5;
   margin-left: 20px;
 }
-.education {
-  margin-left: 20px;
-}
+
 .title-emphasis {
   color: var(--emphasis-color);
 }
+
 .resume-wrap .date {
   font-weight: 900;
   font-size: 20px;
@@ -110,11 +113,9 @@ video {
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.1);
   padding: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
   border-radius: 5px;
 }
+
 .img-container {
   position: relative;
   width: 100%;
@@ -138,9 +139,11 @@ video {
   transition: 0.5s ease;
   background-color: var(--img-hover-background);
 }
+
 .img-container:hover .img-overlay {
   opacity: 1;
 }
+
 .overlay-text {
   color: var(--primary-color);
   text-align: center;
@@ -148,11 +151,9 @@ video {
   font-weight: bold;
   margin-top: 130px;
 }
+
 footer {
-  margin-top: 100px;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 40px;
+  margin: 100px 70px 40px 70px;
 }
 
 footer .contact-box {
@@ -160,6 +161,7 @@ footer .contact-box {
   padding: 30px 120px;
   border-radius: 10px;
 }
+
 .btn-branding {
   background: var(--emphasis-color);
   border-radius: 4px;
@@ -173,21 +175,22 @@ footer .social-links a {
   margin: 0 10px;
   color: var(--primary-color);
   background: var(--secondary-color);
-  padding: 12px 12px;
+  padding: 12px;
   border-radius: 50%;
   font-size: 18px;
   transition: all 100ms ease-in-out;
 }
+
 footer .social-links p {
   margin-top: 16px;
   font-size: 12px;
 }
+
 /* Media query for small screens */
 @media (max-width: 576px) {
   h1 {
     font-size: 55px;
   }
-
   h2 {
     text-align: center;
   }
@@ -196,38 +199,27 @@ footer .social-links p {
   }
   h3 {
     font-size: 20px;
-    color: var(--primary-color);
     margin-top: 20px;
   }
   .homepage {
-    margin-top: 120px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0;
+    margin: 120px 15px 0;
     padding: 20px;
   }
   .navigation-links {
     display: flex;
     justify-content: center;
-  }
-  .navigation-links {
     margin: 10px;
     border-radius: 10px;
     padding: 20px 15px;
-    padding-bottom: -400px;
-    text-decoration: none;
-    text-transform: capitalize;
   }
   .start-link {
     background: var(--secondary-color);
     box-shadow: var(--box-shadow);
     color: var(--primary-color);
   }
-
   .about-me {
     text-align: left;
-    margin-left: -15px;
-    margin-right: 20px;
+    margin: 0 20px 0 -15px;
   }
   .resume-wrap {
     width: 100%;
@@ -240,7 +232,7 @@ footer .social-links p {
     margin: 10px;
   }
   footer .social-links a {
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -257,32 +249,22 @@ footer .social-links p {
   }
   h3 {
     font-size: 40px;
-    color: var(--primary-color);
     margin-top: 50px;
     text-align: center;
   }
   .homepage {
-    margin-top: 150px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0;
+    margin: 150px 15px 0;
     padding: 20px;
-    background: hsla(273, 10%, 79%, 0.1);
+    background: var(--homepage-background);
     box-shadow: var(--box-shadow);
     border-radius: 30px;
   }
   .navigation-links {
     display: flex;
-    margin-bottom: 10px;
     justify-content: center;
-  }
-  .navigation-links {
     margin: 10px;
     border-radius: 10px;
     padding: 20px 15px;
-    padding-bottom: -500px;
-    text-decoration: none;
-    text-transform: capitalize;
   }
   .start-link {
     background: var(--secondary-color);
@@ -291,7 +273,6 @@ footer .social-links p {
     font-size: 30px;
     text-align: center;
   }
-
   .about-me {
     margin: 0;
   }
