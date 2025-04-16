@@ -1,2 +1,2 @@
-This repository contains the code for my online profile, hosted on Netlify. The website is still a work in progress.
-<br/>[Click to view](https://k-dlamini-portfolio.netlify.app/)😅
+Code for my SheCodes React Workshop final project—an online profile hosted on Netlify.
+<br/>[Click to view](https://k-dlamini-portfolio.netlify.app/)
